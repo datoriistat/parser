@@ -73,7 +73,7 @@ public class DatoriiParser extends AbstractParser<Datorie> {
         st.setInt(i++, entity.op_sanatate);
         st.setInt(i++, entity.oa_sanatate);
         st.setInt(i++, entity.oc_sanatate);
-        
+
         st.setLong(i++, entity.total);
     }
 }

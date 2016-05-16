@@ -54,7 +54,7 @@ public abstract class AbstractParser<T> {
 
             @Override
             public boolean accept(File file, String s) {
-                return s.contains(".csv");
+                return s.endsWith(".csv");
             }
         });
 
