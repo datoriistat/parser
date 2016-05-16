@@ -20,7 +20,7 @@ public class DatoriiParser extends AbstractParser<Datorie> {
 
     @Override
     protected String getPreparedStatement() {
-        return "INSERT INTO datorii (cif, denumire, op_stat, oa_stat, oc_stat, op_social, oa_social, oc_social, op_somaj, oa_somaj, oc_somaj, op_sanatate, oa_sanatate, oc_sanatate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        return "INSERT INTO datorii (cif, denumire, op_stat, oa_stat, oc_stat, op_social, oa_social, oc_social, op_somaj, oa_somaj, oc_somaj, op_sanatate, oa_sanatate, oc_sanatate, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     }
 
     @Override
@@ -73,5 +73,7 @@ public class DatoriiParser extends AbstractParser<Datorie> {
         st.setInt(i++, entity.op_sanatate);
         st.setInt(i++, entity.oa_sanatate);
         st.setInt(i++, entity.oc_sanatate);
+        
+        st.setLong(i++, entity.total);
     }
 }
