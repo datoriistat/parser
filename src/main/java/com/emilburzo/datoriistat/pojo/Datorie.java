@@ -42,19 +42,15 @@ public class Datorie {
         // totals
         this.total += this.op_stat;
         this.total += this.oa_stat;
-        this.total += this.oc_stat;
 
         this.total += this.op_social;
         this.total += this.oa_social;
-        this.total += this.oc_social;
 
         this.total += this.op_somaj;
         this.total += this.oa_somaj;
-        this.total += this.oc_somaj;
 
         this.total += this.op_sanatate;
         this.total += this.oa_sanatate;
-        this.total += this.oc_sanatate;
     }
 
 }
